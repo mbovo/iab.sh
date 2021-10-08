@@ -1,4 +1,4 @@
-THEME_VERSION := v0.8.2
+THEME_VERSION := v0.19.1
 THEME := hugo-geekdoc
 BASEDIR := .
 THEMEDIR := $(BASEDIR)/themes
