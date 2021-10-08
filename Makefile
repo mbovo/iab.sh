@@ -8,14 +8,14 @@ all: assets build
 
 .PHONY: assets
 assets:
-   mkdir -p $(THEMEDIR)/$(THEME)/ ; \
-   curl -sSL "https://github.com/thegeeklab/$(THEME)/releases/download/${THEME_VERSION}/$(THEME).tar.gz" | tar -xz -C $(THEMEDIR)/$(THEME)/ --strip-components=1
+	mkdir -p $(THEMEDIR)/$(THEME)/ ; \
+	curl -sSL "https://github.com/thegeeklab/$(THEME)/releases/download/${THEME_VERSION}/$(THEME).tar.gz" | tar -xz -C $(THEMEDIR)/$(THEME)/ --strip-components=1
 
 .PHONY: build
 build:
-        cd $(BASEDIR); hugo
+	cd $(BASEDIR); hugo
 
 .PHONY: clean
 clean:
-   rm -rf $(THEMEDIR) && \
-   rm -rf $(BASEDIR)/public
+	rm -rf $(THEMEDIR) && \
+	rm -rf $(BASEDIR)/public
