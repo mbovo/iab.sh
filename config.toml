@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Infrastructure As Bash"
+copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
